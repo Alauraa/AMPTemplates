@@ -3,8 +3,8 @@
         "UpdateStageName": "SteamCMD Server Download",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "SteamCMD",
-        "UpdateSourceData": "17740",
-        "UpdateSourceArgs": "17740",
+        "UpdateSourceData": "460040",
+        "UpdateSourceArgs": "460040",
         "SkipOnFailure": false
     },
     {

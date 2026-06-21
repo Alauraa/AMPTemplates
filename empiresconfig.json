@@ -1,0 +1,19 @@
+[
+    {
+        "DisplayName": "Amp Empires Server",
+        "Category": "Server Settings",
+        "Description": "Amp Empires Server",
+        "Keywords": "amp,empires,server",
+        "FieldName": "Amp Empires Server",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "Amp Empires Server",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Amp Empires Server",
+        "Placeholder": "Amp Empires Server",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    }
+]

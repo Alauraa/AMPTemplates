@@ -3,6 +3,6 @@
         "ConfigFile": "empires/cfg/server.cfg",
         "AutoMap": true,
         "ConfigType": "template",
-        "ConfigFileTemplate": "empires/emserver.cfg"
+        "ConfigFileTemplate": "empires/AMP_server.cfg"
     }
 ]

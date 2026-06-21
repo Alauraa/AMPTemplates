@@ -1,8 +1,1 @@
-[
-    {
-        "ConfigFile": "empires/cfg/server.cfg",
-        "AutoMap": true,
-        "ConfigType": "template",
-        "ConfigFileTemplate": "empires/AMP_server.cfg"
-    }
-]
+[]

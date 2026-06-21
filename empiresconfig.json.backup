@@ -3,11 +3,11 @@
         "DisplayName": "RCON Password",
         "Category": "empires:stadia_controller",
         "Subcategory": "Server:dns:1",
-        "Description": "",
+        "Description": "The Remote Rcon Password used to do console commands and server administration!",
         "Keywords": "",
         "FieldName": "$RemoteAdminPassword",
         "InputType": "text",
-        "Hidden": true,
+        "Hidden": false,
         "ParamFieldName": "rcon_password",
         "EnumValues": {}
     },
@@ -37,18 +37,6 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Server Steam Group",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "Sets the ID of the steam group that the server belongs to. You can find your group's ID on the admin profile page in the steam community",
-        "Keywords": "steam,group,id,sv_steamgroup",
-        "FieldName": "sv_steamgroup",
-        "InputType": "text",
-        "ParamFieldName": "sv_steamgroup",
-        "DefaultValue": "",
-        "EnumValues": {}
-    },
-    {
         "DisplayName": "LAN Server",
         "Category": "empires:stadia_controller",
         "Subcategory": "Server:dns:1",
@@ -62,21 +50,6 @@
             "False": "0",
             "True": "1"
         }
-    },
-    {
-        "DisplayName": "Game Server Login Token (GSLT)",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "Sets the [Steam Game Server Login Token](https://steamcommunity.com/dev/managegameservers) for the server, to allow it to be listed in the server browser. Use app ID 320 when generating the token",
-        "Keywords": "steam,server,login,token,gslt,sv_setsteamaccount",
-        "FieldName": "sv_setsteamaccount",
-        "InputType": "password",
-        "ParamFieldName": "sv_setsteamaccount",
-        "IncludeInCommandLine": true,
-        "SkipIfEmpty": true,
-        "DefaultValue": "",
-        "Placeholder": "6544F7E034119F113526E96474F559AH",
-        "EnumValues": {}
     },
     {
         "DisplayName": "Server Password",
@@ -177,22 +150,6 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Visible Player Limit",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "Sets the maximum players reported to prospective clients, regardless of the Player Limit. -1 = disabled",
-        "Keywords": "visible,max,players,sv_visiblemaxplayers",
-        "FieldName": "sv_visiblemaxplayers",
-        "InputType": "number",
-        "MinValue": "-1",
-        "MaxValue": "64",
-        "ParamFieldName": "sv_visiblemaxplayers",
-        "DefaultValue": "-1",
-        "Placeholder": "-1",
-        "Suffix": "players",
-        "EnumValues": {}
-    },
-    {
         "DisplayName": "Pure Server Mode",
         "Category": "empires:stadia_controller",
         "Subcategory": "Server:dns:1",
@@ -225,21 +182,6 @@
         }
     },
     {
-        "DisplayName": "Force Preload",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "If set, server side preloading will be forced",
-        "Keywords": "force,preload,sv_forcepreload",
-        "FieldName": "sv_forcepreload",
-        "InputType": "checkbox",
-        "ParamFieldName": "sv_forcepreload",
-        "DefaultValue": "0",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
-    },
-    {
         "DisplayName": "Enable Cheats",
         "Category": "empires:stadia_controller",
         "Subcategory": "Server:dns:1",
@@ -249,36 +191,6 @@
         "InputType": "checkbox",
         "ParamFieldName": "sv_cheats",
         "DefaultValue": "0",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
-    },
-    {
-        "DisplayName": "Disable Valve Anti-Cheat",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "If set, Valve Anti-Cheat (VAC) will be disabled",
-        "Keywords": "valve,anti,cheat,vac,insecure",
-        "FieldName": "insecure",
-        "InputType": "checkbox",
-        "ParamFieldName": "insecure",
-        "DefaultValue": "",
-        "EnumValues": {
-            "False": "",
-            "True": "-insecure "
-        }
-    },
-    {
-        "DisplayName": "Enable IP Packet Filter",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "If set, enables packet filtering by IP mode. If disabled, everyone will treated as IP-banned, but their IP won't be added to the banlist",
-        "Keywords": "ip,ban,banning,sv_filterban",
-        "FieldName": "sv_filterban",
-        "InputType": "checkbox",
-        "ParamFieldName": "sv_filterban",
-        "DefaultValue": "1",
         "EnumValues": {
             "False": "0",
             "True": "1"
@@ -418,21 +330,6 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Enable CPU Stats Collection",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "If set, CPU stats will be collected",
-        "Keywords": "cpu,stats,sv_stats",
-        "FieldName": "sv_stats",
-        "InputType": "checkbox",
-        "ParamFieldName": "sv_stats",
-        "DefaultValue": "1",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
-    },
-    {
         "DisplayName": "Server/RCON IPv4 IP Binding",
         "Category": "empires:stadia_controller",
         "Subcategory": "Server:dns:1",
@@ -525,148 +422,6 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Enable Cooperative Play",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "If set, cooperative play will be enabled",
-        "Keywords": "enable,coop,cooperative,play",
-        "FieldName": "coop",
-        "InputType": "checkbox",
-        "ParamFieldName": "coop",
-        "DefaultValue": "0",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
-    },
-    {
-        "DisplayName": "Enable Deathmatch",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "If set, deathmatch will be enabled",
-        "Keywords": "enable,deathmatch",
-        "FieldName": "deathmatch",
-        "InputType": "checkbox",
-        "ParamFieldName": "deathmatch",
-        "DefaultValue": "1",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
-    },
-    {
-        "DisplayName": "Maximum Velocity",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the maximum speed any ballistically moving object is allowed to attain per axis",
-        "Keywords": "maximum,speed,velocity,sv_maxvelocity",
-        "FieldName": "sv_maxvelocity",
-        "InputType": "number",
-        "MinValue": "1",
-        "ParamFieldName": "sv_maxvelocity",
-        "DefaultValue": "3500",
-        "Placeholder": "3500",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "World Gravity",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the world gravity",
-        "Keywords": "gravity,sv_gravity",
-        "FieldName": "sv_gravity",
-        "InputType": "number",
-        "MinValue": "1",
-        "ParamFieldName": "sv_gravity",
-        "DefaultValue": "600",
-        "Placeholder": "600",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Player Friction",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the player friction. Setting this to a negative number will cause out-of-range errors",
-        "Keywords": "friction,sv_friction",
-        "FieldName": "sv_friction",
-        "InputType": "number",
-        "MinValue": "-100",
-        "ParamFieldName": "sv_friction",
-        "DefaultValue": "4",
-        "Placeholder": "4",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Player Acceleration",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the player acceleration",
-        "Keywords": "acceleration,sv_accelerate,accelerate",
-        "FieldName": "sv_accelerate",
-        "InputType": "number",
-        "MinValue": "1",
-        "ParamFieldName": "sv_accelerate",
-        "DefaultValue": "10",
-        "Placeholder": "10",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Player Air Acceleration",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the player air acceleration",
-        "Keywords": "air,acceleration,sv_airaccelerate,accelerate",
-        "FieldName": "sv_airaccelerate",
-        "InputType": "number",
-        "MinValue": "1",
-        "ParamFieldName": "sv_airaccelerate",
-        "DefaultValue": "10",
-        "Placeholder": "10",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Player Water Acceleration",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the player water acceleration",
-        "Keywords": "water,acceleration,sv_wateraccelerate,accelerate",
-        "FieldName": "sv_wateraccelerate",
-        "InputType": "number",
-        "MinValue": "1",
-        "ParamFieldName": "sv_wateraccelerate",
-        "DefaultValue": "10",
-        "Placeholder": "10",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Water Friction",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the water friction",
-        "Keywords": "water,friction,sv_waterfriction",
-        "FieldName": "sv_waterfriction",
-        "InputType": "number",
-        "MinValue": "1",
-        "ParamFieldName": "sv_waterfriction",
-        "DefaultValue": "1",
-        "Placeholder": "1",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Minimum Stopping Speed",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the minimum stopping speed when on the ground",
-        "Keywords": "stopping,speed,ground,sv_stopspeed",
-        "FieldName": "sv_stopspeed",
-        "InputType": "number",
-        "MinValue": "1",
-        "ParamFieldName": "sv_stopspeed",
-        "DefaultValue": "100",
-        "Placeholder": "100",
-        "EnumValues": {}
-    },
-    {
         "DisplayName": "Fall Damage",
         "Category": "empires:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
@@ -679,95 +434,6 @@
         "DefaultValue": "0",
         "Placeholder": "0",
         "EnumValues": {}
-    },
-    {
-        "DisplayName": "Enable Weapons Stay",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "If set, weapons will stay (allowing immediate pickup by players without weapons). Requires that there be additional ammo (can't pick up a weapon to get more ammo)",
-        "Keywords": "stay,weapon,weaponstay",
-        "FieldName": "mp_weaponstay",
-        "InputType": "checkbox",
-        "ParamFieldName": "mp_weaponstay",
-        "DefaultValue": "0",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
-    },
-    {
-        "DisplayName": "Force Respawn",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "If sets, players will be forced to respawn after death",
-        "Keywords": "force,respawn,spawn,mp_forcerespawn",
-        "FieldName": "mp_forcerespawn",
-        "InputType": "checkbox",
-        "ParamFieldName": "mp_forcerespawn",
-        "DefaultValue": "1",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
-    },
-    {
-        "DisplayName": "Weapon Respawn Time",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the time period before weapons respawn",
-        "Keywords": "weapon,respawn,time,period,sv_empires_weapon_respawn_time,weaponrespawn",
-        "FieldName": "weapon,respawn,time,period,sv_empires_weapon_respawn_time",
-        "InputType": "number",
-        "MinValue": "1",
-        "ParamFieldName": "sv_empires_weapon_respawn_time",
-        "DefaultValue": "20",
-        "Placeholder": "20",
-        "Suffix": "seconds",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Item Respawn Time",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the time period before items respawn",
-        "Keywords": "item,respawn,time,period,sv_empires_item_respawn_time,itemrespawn",
-        "FieldName": "sv_empires_item_respawn_time",
-        "InputType": "number",
-        "MinValue": "1",
-        "ParamFieldName": "sv_empires_item_respawn_time",
-        "DefaultValue": "30",
-        "Placeholder": "30",
-        "Suffix": "seconds",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Maximum Player Movement Speed",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the maximum speed that a player can move at when on the ground",
-        "Keywords": "maximum,movement,speed,sv_maxspeed",
-        "FieldName": "sv_maxspeed",
-        "InputType": "number",
-        "MinValue": "10",
-        "ParamFieldName": "sv_maxspeed",
-        "DefaultValue": "320",
-        "Placeholder": "320",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Enable Friendly Fire",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "If set, friendly fire will be enabled (teammates can cause damage to other teammates)",
-        "Keywords": "friendly,fire,mp_friendlyfire",
-        "FieldName": "mp_friendlyfire",
-        "InputType": "checkbox",
-        "ParamFieldName": "mp_friendlyfire",
-        "DefaultValue": "0",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
     },
     {
         "DisplayName": "Enable Footsteps",
@@ -878,50 +544,6 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Maximum Round Limit",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the maximum number of rounds to play before the map rotates. 0 = disabled",
-        "Keywords": "round,limit,rotation,mp_maxrounds",
-        "FieldName": "mp_maxrounds",
-        "InputType": "number",
-        "MinValue": "0",
-        "ParamFieldName": "mp_maxrounds",
-        "DefaultValue": "0",
-        "Placeholder": "0",
-        "Suffix": "rounds",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Frag Limit",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "Sets the frag limit (number of kills) before the map rotates. 0 = disabled",
-        "Keywords": "frag,kills,limit,mp_fraglimit",
-        "FieldName": "mp_fraglimit",
-        "InputType": "number",
-        "MinValue": "0",
-        "ParamFieldName": "mp_fraglimit",
-        "DefaultValue": "0",
-        "Placeholder": "0",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Enable Teamplay",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "If set, teamplay will be enabled",
-        "Keywords": "team,teamplay,mp_teamplay",
-        "FieldName": "mp_teamplay",
-        "InputType": "checkbox",
-        "ParamFieldName": "mp_teamplay",
-        "DefaultValue": "0",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
-    },
-    {
         "DisplayName": "Enable Flashlight",
         "Category": "empires:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
@@ -931,36 +553,6 @@
         "InputType": "checkbox",
         "ParamFieldName": "mp_flashlight",
         "DefaultValue": "0",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
-    },
-    {
-        "DisplayName": "Allow NPCs",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "If set, NPCs will be enabled",
-        "Keywords": "bot,bots,npcs,mp_allowNPCs",
-        "FieldName": "mp_allowNPCs",
-        "InputType": "checkbox",
-        "ParamFieldName": "mp_allowNPCs",
-        "DefaultValue": "1",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
-    },
-    {
-        "DisplayName": "Enable Auto Crosshair",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Gameplay:joystick:2",
-        "Description": "If set, auto crosshair will be enabled",
-        "Keywords": "auto,crosshair,mp_autocrosshair",
-        "FieldName": "mp_autocrosshair",
-        "InputType": "checkbox",
-        "ParamFieldName": "mp_autocrosshair",
-        "DefaultValue": "1",
         "EnumValues": {
             "False": "0",
             "True": "1"
@@ -1010,21 +602,6 @@
         "DefaultValue": "3",
         "Placeholder": "3",
         "EnumValues": {}
-    },
-    {
-        "DisplayName": "Enable Spectator Noclip",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "Spectators:eyeglasses:3",
-        "Description": "If set, enables noclip mode for spectators",
-        "Keywords": "noclip,spectators,sv_specnoclip",
-        "FieldName": "sv_specnoclip",
-        "InputType": "checkbox",
-        "ParamFieldName": "sv_specnoclip",
-        "DefaultValue": "1",
-        "EnumValues": {
-            "False": "0",
-            "True": "1"
-        }
     },
     {
         "DisplayName": "Disable SourceTV",
@@ -1079,22 +656,6 @@
             "False": "0",
             "True": "1"
         }
-    },
-    {
-        "DisplayName": "SourceTV Viewer Limit",
-        "Category": "empires:stadia_controller",
-        "Subcategory": "SourceTV:tv:4",
-        "Description": "Sets the maximum number of clients allowed to connect to the server's SourceTV. 0 = no SourceTV viewers are allowed, the game will only be recorded locally",
-        "Keywords": "max,maximum,spectators,clients,viewers,sourcetv,source,tv,tv_maxclients",
-        "FieldName": "sourcetv,source,tv,tv_maxclients",
-        "InputType": "number",
-        "MinValue": "0",
-        "MaxValue": "255",
-        "ParamFieldName": "tv_maxclients",
-        "DefaultValue": "64",
-        "Placeholder": "64",
-        "Suffix": "viewers",
-        "EnumValues": {}
     },
     {
         "DisplayName": "SourceTV Delay",
